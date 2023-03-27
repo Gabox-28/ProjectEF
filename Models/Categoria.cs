@@ -15,6 +15,6 @@ public class Categoria
     public int Peso { get; set; }
     
     //Permite traer las tareas que están relacionadas con esta categoria
-   
+    [JsonIgnore]
     public virtual ICollection<Tarea> Tareas { get; set; }
 }
