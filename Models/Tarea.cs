@@ -17,6 +17,7 @@ public class Tarea
     public string Descripcion { get; set; }
     public Prioridad PrioridadTarea { get; set; }
     public DateTime FechaCreacion { get; set; }
+    public Estado Estado { get; set; }
     
     //Permite traer la informacion de la categoria asociada con la tarea
     public virtual Categoria Categoria { get; set; }
@@ -30,4 +31,11 @@ public enum Prioridad
     Baja,
     Media,
     Alta
+}
+
+public enum Estado
+{
+    PorHacer,
+    EnProceso,
+    Hecha
 }

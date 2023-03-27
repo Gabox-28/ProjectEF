@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ProjectEF;
+using ProjectEF.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
